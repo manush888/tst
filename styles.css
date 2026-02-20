@@ -1,0 +1,202 @@
+@font-face {
+    font-family: poppins;
+    src: url(./assets/Poppins-ExtraLight.woff2);
+}
+
+@font-face {
+    font-family: tanker;
+    src: url(./assets/Tanker-Regular.woff2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color : #fff;
+}
+
+body {
+    background: #282828;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.mainCon {
+    max-width: 400px;
+    height: 500px;
+    background-color: #8b8b8b60;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+}
+
+.mainCon .title {
+    font-family: tanker;
+    /* font-family: "Inter Tight"; */
+    /* font-weight: 400; */
+    font-size: 2rem;
+    transform: translateY(10px);
+}
+
+.logoArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.keetel {
+    background: url(./assets/ktm.png);
+}
+
+.phonerepairlk {
+    background: url(./assets/prlk.png);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo svg {
+    width: 80px;
+    height: 80px;
+}
+
+.task .taskTitle {
+    font-family: poppins;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.task .actBTN {
+    margin-top: 10px;
+    width: fit-content;
+    padding: 8px 15px;
+    background: #ff0000;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-family: tanker;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#ab2 {
+    background: #ff0051;
+}
+
+#ab3 {
+    background: #0866ff;
+    border-radius: 8px;
+}
+
+.task a {
+    text-decoration: none;
+}
+
+.taskCon {
+    height: 300px;
+    padding: 25px 10px 10px 10px ;
+    width: 100%;
+    background: #0000003e;
+    border: 1px solid #ffffff4c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.taskCon hr {
+    mask: linear-gradient(to right, transparent, white, transparent);
+}
+
+/* background styles */
+
+.backgound {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(30px);
+}
+
+.bcd {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bcdot1 {
+    height: 200px;
+    background: #ff0000;
+}
+
+.bcdot2 {
+    height: 150px;
+    background: #1bc0ed;
+}
+
+.bcdot3 {
+    height: 100px;
+    background: #0a50d1;
+}
+
+/* random movement animations */
+@keyframes moveRandom1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, -80px); }
+    50% { transform: translate(-60px, 120px); }
+    75% { transform: translate(80px, 60px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes moveRandom2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-120px, 90px); }
+    50% { transform: translate(70px, -110px); }
+    75% { transform: translate(-85px, -70px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes moveRandom3 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(95px, 75px); }
+    50% { transform: translate(-100px, -90px); }
+    75% { transform: translate(60px, -85px); }
+    100% { transform: translate(0, 0); }
+}
+
+.bcdot1 {
+    animation: moveRandom1 45s infinite ease-in-out;
+}
+
+.bcdot2 {
+    animation: moveRandom2 54s infinite ease-in-out;
+}
+
+.bcdot3 {
+    animation: moveRandom3 60s infinite ease-in-out;
+}
+
